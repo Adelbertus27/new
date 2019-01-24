@@ -1,0 +1,34 @@
+body{
+    color: white;
+    text-align: center
+  }
+  #Banner{
+    /* max-width: 960px;
+    margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+    grid-gap: 10px;
+    max-width: 1850px;  
+
+    margin: 0 auto;
+    grid-template-areas: "kotak1 kotak1 kotak1" ". kotak2 kotak2" 
+  }
+  #Banner div{
+    background: skyblue;
+    padding: 30px
+  }
+   .kotak1{
+    background-image: url(../css/images/Black\ Panther\ \(2\).jpg);
+    grid-area: kotak1;
+    /* background-size: cover */
+    background-position: 0% 65%;    
+  }
+  .kotak2{
+    grid-area: kotak2;
+    
+  }
+  #Banner div:nth-child(even){
+    background: grey;
+
+  }
